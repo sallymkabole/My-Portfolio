@@ -134,6 +134,64 @@
           </v-col>
          
         </v-row>
+        <v-row >
+          <v-col md="12" xs="12" sm="12">
+              <p class="text-h5  pin ">
+          Contact Me
+        </p>
+            <v-card flat class="abt pa-4">
+             
+        <v-form v-model="valid">
+        <v-row>
+          <v-col md="6" xs="12" sm="12">
+            <h2 class="text-left pin">FullName</h2>
+            <v-text-field
+              v-model="userInfo.fname"
+              outlined
+              color="#f2a278"
+              placeholder="Full Name"
+            ></v-text-field>
+          </v-col>
+          <v-col md="6" xs="12" sm="12">
+            <h2 class="text-left pin">Email</h2>
+        <v-text-field
+          v-model="userInfo.email"
+          :rules="[emailrules.required, emailrules.email]"
+          class=""
+          color="#f2a278"
+          outlined
+          placeholder="Email"
+        ></v-text-field>
+          </v-col>
+        </v-row>
+
+        
+        <v-row>
+          
+          <v-col md="12" xs="12" sm="12">
+            <h2 class=" pin">Your Message</h2>
+             <v-textarea
+             color="#f2a278"
+          outlined
+          name="input-7-4"
+          value="The Woodman set to work at once, and so sharp was his axe that the tree was soon chopped nearly through."
+        ></v-textarea>
+         </v-col
+        ></v-row>
+        <v-btn
+          class="btn1"
+          block
+          color="#ec6382"
+          @click="registerUser"
+          :disabled="!valid"
+        >
+          SIGN UP</v-btn
+        >
+      </v-form>
+            </v-card>
+          </v-col>
+         
+        </v-row>
         
          </v-card>
       </v-container>
@@ -145,9 +203,35 @@
 export default {
   name: 'App',
 
-  data: () => ({
-    //
-  }),
+  data() {
+    return {
+      errors: [],
+      valid: false,
+      userInfo: {
+        fname: '',
+        lname: '',
+        email: '',
+        phone: null,
+        password: '',
+        age: '',
+      },
+      number: 0,
+      emailrules: {
+        required: (value) => !!value || 'Required.',
+        counter: (value) => value.length <= 20 || 'Max 20 characters',
+        email: (value) => {
+          const pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          return pattern.test(value) || 'Invalid e-mail.';
+        },
+      },
+      show1: false,
+      rules: {
+        required: (value) => !!value || 'Required.',
+        min: (v) => v.length >= 8 || 'Min 8 characters',
+        // emailMatch: () => `The email and password you entered don't match`,
+      },
+    };
+  },
 };
 </script>
 <style scoped>
