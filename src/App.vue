@@ -40,12 +40,10 @@
            <v-row >
           <v-col md="6" xs="12" sm="12">
             <p class="text-h4  pin ">
-          Hi, I’m Musanga Sally Kabole, a FrontEnd Developer
+          Hello World  ,
         </p>
-        <p class="white--text">
-          By day I design GitLab, an open-core DevOps platform. By night I do
-          digital illustration. Creative expression is what lights me up, and
-          I'm always open to learning about new opportunities.
+         <p class="white--text">
+         My name is <strong class="text-h6">Sally Musanga</strong>. I'm a passionate problem solver that brings an engineering perspective and creative problem solving to create products and experiences people love to use.My speciality is in website development where I have intermediate experience using React & VueJs for frontend and Python for the backend.
         </p>
         <v-btn color="#fff" outlined> Get in Touch</v-btn>
           </v-col>
@@ -62,7 +60,7 @@
             <v-card flat class="abt pa-4">
              
         <p class="white--text">
-          I'm a front-end web developer with a background in computer systems and network infrastructure. My 8 years of IT experience has given me a strong foundation for web development and building complex solutions. Recently, I graduated from the Juno College Immersive Web Development Bootcamp. I am passionate about coding and solving problems through code, and I am excited to work alongside other amazing programmers and learn so much more!
+          I'm a front-end web developer with a background in Statistics. My experience has given me a strong foundation for web development and building complex solutions. Recently, I graduated from the Mest Africa's Software Entrepreneurship Training Program. I am passionate about coding and solving problems through code, and I am excited to work alongside other amazing programmers and learn so much more!
         </p>
             </v-card>
           </v-col>
@@ -134,69 +132,99 @@
           </v-col>
          
         </v-row>
-        <v-row >
+        <v-row  >
+           
           <v-col md="12" xs="12" sm="12">
               <p class="text-h5  pin ">
-          Contact Me
+          Experience
         </p>
-            <v-card flat class="abt pa-4">
+            <v-card flat class="abt pa-8">
              
-        <v-form v-model="valid">
-        <v-row>
-          <v-col md="6" xs="12" sm="12">
-            <h2 class="text-left pin">FullName</h2>
-            <v-text-field
-              v-model="userInfo.fname"
-              outlined
-              color="#f2a278"
-              placeholder="Full Name"
-            ></v-text-field>
-          </v-col>
-          <v-col md="6" xs="12" sm="12">
-            <h2 class="text-left pin">Email</h2>
-        <v-text-field
-          v-model="userInfo.email"
-          :rules="[emailrules.required, emailrules.email]"
-          class=""
-          color="#f2a278"
-          outlined
-          placeholder="Email"
-        ></v-text-field>
-          </v-col>
-        </v-row>
-
         
-        <v-row>
+       
+        <v-row class=" pa-2">
+         <v-col cols="12" class="d-flex flex-column">
+          <v-row  class="d-flex d-inline-flex "><v-icon color="#f2a278">mdi-account-hard-hat</v-icon><h3 class="pin">Freelance Software Developer</h3>
+</v-row >
+          <v-row  class="d-flex d-inline-flex"><v-icon color="#fff">mdi-clock</v-icon><h3 class="bg">September 2020 - Present</h3></v-row >
+          <v-row  class="d-flex d-inline-flex"><v-icon color="#fff">mdi-stack-overflow</v-icon><h3 class="bg">VueJs, React, Flask, Postgresql</h3></v-row >
+          <v-row  class="d-flex d-inline-flex">
+             <ul>
+              <li>
+                <h3 class="bg">Developed progressive web applications with cross browser / cross device capabilities.</h3>
+              </li>
+              <li>
+                <h3 class="bg">Designed and developed location based app using VueJs(Nuxt) , Vuetify for frontend and Flask, Postgres for the backend</h3>
+              </li>
+              <li>
+                <h3 class="bg">Implemented push notification feature using Firebase Cloud Messaging</h3>
+              </li>
+              
+            </ul></v-row >
           
-          <v-col md="12" xs="12" sm="12">
-            <h2 class=" pin">Your Message</h2>
-             <v-textarea
-             color="#f2a278"
-          outlined
-          name="input-7-4"
-          value="The Woodman set to work at once, and so sharp was his axe that the tree was soon chopped nearly through."
-        ></v-textarea>
-         </v-col
-        ></v-row>
-        <v-btn
-          class="btn1"
-          block
-          color="#ec6382"
-          @click="registerUser"
-          :disabled="!valid"
-        >
-          SIGN UP</v-btn
-        >
-      </v-form>
+         </v-col>
+        </v-row>
+        <v-row class=" pa-2">
+         <v-col cols="12" class="d-flex flex-column">
+          <v-row  class="d-flex d-inline-flex"><v-icon color="#f2a278">mdi-account-hard-hat</v-icon><h3 class="pin">FrontEnd Developer</h3>
+</v-row >
+          <v-row  class="d-flex d-inline-flex"><v-icon color="#fff">mdi-office-building</v-icon><h3 class="bg">Mest Africa , Ghana</h3></v-row >
+                    <v-row  class="d-flex d-inline-flex"><v-icon color="#fff">mdi-clock</v-icon><h3 class="bg">August 2019 - August 2020</h3></v-row >
+          <v-row  class="d-flex d-inline-flex"><v-icon color="#fff">mdi-stack-overflow</v-icon><h3 class="bg">VueJs, Flask, Postgresql</h3></v-row >
+          <v-row  class="d-flex d-inline-flex">
+            <ul>
+              <li>
+                <h3 class="bg">Designed and developed a user friendly mobile-first rental platform built with VueJs for the frontend, Python(Flask) for the backend and Postgres as the database.</h3>
+              </li>
+              <li>
+                <h3 class="bg">Worked in a team to create a sales automation software for fmcg companies using Vue Js and MongoDB.</h3>
+              </li>
+            </ul>
+              </v-row >
+              <v-row  class="d-flex d-inline-flex"><v-icon color="#f2a278">mdi-account-hard-hat</v-icon><h3 class="pin">Intern Developer</h3>
+</v-row >
+          <v-row  class="d-flex d-inline-flex"><v-icon color="#fff">mdi-office-building</v-icon><h3 class="bg">Edgetech Consults Ltd , Kenya</h3></v-row >
+                    <v-row  class="d-flex d-inline-flex"><v-icon color="#fff">mdi-clock</v-icon><h3 class="bg">October 2018 - March 2020</h3></v-row >
+          <v-row  class="d-flex d-inline-flex"><v-icon color="#fff">mdi-stack-overflow</v-icon><h3 class="bg">Python, Flask, Mysql</h3></v-row >
+          <v-row  class="d-flex d-inline-flex">
+            <ul>
+              <li>
+                <h3 class="bg"> Customized an ERP system for the Company</h3>
+              </li>
+              <li>
+                <h3 class="bg"> Used Python to visualize system performance for an SMS </h3>
+              </li>
+            </ul>
+              </v-row >
+          
+         </v-col>
+        </v-row>
+        
+       
             </v-card>
           </v-col>
          
         </v-row>
         
+        <v-row >
+          
+        </v-row>
+        
          </v-card>
       </v-container>
     </v-main>
+    <template>
+  <v-footer color="#142E4D" padless>
+    <v-col
+      class="text-center white--text"
+      cols="12"
+    >
+      {{ new Date().getFullYear() }} — <strong>SMK</strong>
+    </v-col>
+  </v-footer>
+</template>
   </v-app>
+
 </template>
 
 <script>
@@ -256,16 +284,16 @@ export default {
 }
 .avt {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border: 2px solid #fff;
   border-radius: 50%;
 }
 
 .avt::after {
   content: '';
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border: 1px solid #fff;
   border-radius: 50%;
   display: block;
