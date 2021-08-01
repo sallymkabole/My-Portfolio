@@ -34,7 +34,7 @@
       </v-btn>
     </v-app-bar>
 
-    <v-main>
+   
       <v-container fluid fill-height class="bg">
          <v-card flat max-width="1000" color="#153956"  class="profile mx-auto">
            <v-row >
@@ -212,8 +212,7 @@
         
          </v-card>
       </v-container>
-    </v-main>
-    <template>
+    
   <v-footer color="#142E4D" padless>
     <v-col
       class="text-center white--text"
@@ -222,7 +221,7 @@
       {{ new Date().getFullYear() }} — <strong>SMK</strong>
     </v-col>
   </v-footer>
-</template>
+
   </v-app>
 
 </template>
