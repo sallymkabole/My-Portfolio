@@ -45,7 +45,7 @@
          <p class="white--text">
          My name is <strong class="text-h6">Sally Musanga</strong>. I'm a passionate problem solver that brings an engineering perspective and creative problem solving to create products and experiences people love to use.My speciality is in website development where I have intermediate experience using React & VueJs for frontend and Python for the backend.
         </p>
-        <v-btn color="#fff" outlined> Get in Touch</v-btn>
+        <v-btn  class="btn" color="#fff" outlined> Get in Touch</v-btn>
           </v-col>
           <v-col md="6" xs="12" sm="12">
                    <img class="avt" src="./assets/img/sally.png">
@@ -103,20 +103,20 @@
             
         <v-row>
           <v-col md="4" xs="12" sm="12">
-            <img src="./assets/img/sally.png" width="200" alt="">
+            <img src="./assets/img/bakery.png" width="200" alt="">
           </v-col>
           <v-col md="8" xs="12" sm="12"><h1 class="bg">The Bakery</h1>
-          <p class="bg">A web platform that enables user search for houses in given locations, book, and pay deposit if they like the house.</p>
+          <p class="bg">A simple landing page for online bakery made with Vue JS . Shop, add to your cart, and see your total.</p>
           <h3 class="bg">Tech Used : VueJs, Flask, Postgres</h3>
-          <span class="d-flex d-inline-flex"><h3 class="bg mr-4"><a href="https://bakery-web.netlify.app/">LIVE SITE</a></h3><h3 class="bg"><a href="https://bakery-web.netlify.app/">GITHUB</a></h3></span></v-col>
+          <span class="d-flex d-inline-flex"><h3 class="bg mr-4"><a target="_blank" href="https://bakery-web.netlify.app/">LIVE SITE</a></h3><h3 class="bg"><a target="_blank" href="https://github.com/sallymkabole/vue-bakery-web">GITHUB</a></h3></span></v-col>
         </v-row>
         <v-row>
           <v-col md="8" xs="12" sm="12"><h1 class="bg">Movein</h1>
           <p class="bg">A web platform that enables user search for houses in given locations, book, and pay deposit if they like the house.</p>
           <h3 class="bg">Tech Used : VueJs, Flask, Postgres</h3>
-          <span class="d-flex d-inline-flex"><h3 class="bg mr-4"><a href="https://bakery-web.netlify.app/">LIVE SITE</a></h3><h3 class="bg"><a href="https://bakery-web.netlify.app/">GITHUB</a></h3></span></v-col>
+          <span class="d-flex d-inline-flex"><h3 class="bg mr-4"><a target="_blank" href="https://movein-cli.herokuapp.com/">LIVE SITE</a></h3><h3 class="bg"><a target="_blank" href="https://github.com/LagunaAfrika/movein-client">GITHUB</a></h3></span></v-col>
           <v-col md="4" xs="12" sm="12">
-            <img src="./assets/img/sally.png" width="200" alt="">
+            <img src="./assets/img/movein.png" width="200" alt="">
           </v-col>
         </v-row>
         <v-row>
@@ -126,7 +126,7 @@
           <v-col md="8" xs="12" sm="12"><h1 class="bg">Movein</h1>
           <p class="bg">A web platform that enables user search for houses in given locations, book, and pay deposit if they like the house.</p>
           <h3 class="bg">Tech Used : VueJs, Flask, Postgres</h3>
-          <span class="d-flex d-inline-flex"><h3 class="bg mr-4"><a href="https://bakery-web.netlify.app/">LIVE SITE</a></h3><h3 class="bg"><a href="https://bakery-web.netlify.app/">GITHUB</a></h3></span></v-col>
+          <span class="d-flex d-inline-flex"><h3 class="bg mr-4"><a target="_blank" href="https://bakery-web.netlify.app/">LIVE SITE</a></h3><h3 class="bg"><a target="_blank" href="https://bakery-web.netlify.app/">GITHUB</a></h3></span></v-col>
         </v-row>
             </v-card>
           </v-col>
@@ -263,6 +263,12 @@ export default {
 };
 </script>
 <style scoped>
+.btn{
+    background-color: #f07b61;
+    border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #142E4D;
+}
 .abt{
  border: 4px solid #142E4D !important;
  background: transparent !important;
