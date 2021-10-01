@@ -1,7 +1,9 @@
 <!-- eslint-disable -->
 <template>
-  <v-app>
-    <v-app-bar color="#153956" app flat>
+  <v-app  style=" background-color: #153956;
+  color: #f5f2e8;
+  font-family: 'Sen', sans-serif;">
+    <v-app-bar class="mb-2"  color="#153956"  flat>
       <div class="d-flex align-center">
         <h5 class="white--text bg" >SALLY MUSANGA KABOLE</h5>
       </div>
@@ -38,19 +40,19 @@
     </v-app-bar>
 
    
-      <v-container fluid fill-height class="bg">
-         <v-card flat max-width="1000" color="#153956"  class="profile mx-auto">
-           <v-row >
-          <v-col md="6" xs="12" sm="12">
+      <v-container style="width:50vw" fluid fill-height class="bg">
+         <v-card flat width="100%" color="#153956"  class="profile mx-auto">
+           <v-row  >
+          <v-col  md="6" xs="12" sm="12">
             <p class="text-h4  pin ">
           Hello World  ,
         </p>
          <p class="white--text">
-         My name is <strong class="text-h6">Sally Musanga</strong>. I'm a passionate problem solver that brings an engineering perspective and creative problem solving to create products and experiences people love to use.My speciality is in website development where I have intermediate experience using React & VueJs for frontend and Python for the backend.
+         My name is <strong class="text-h6 bg">Sally Musanga</strong>. I'm a passionate problem solver that brings an engineering perspective and creative problem solving to create products and experiences people love to use.My speciality is in website development where I have intermediate experience using React & VueJs for frontend and Python for the backend.
         </p>
         <v-btn  class="btn" color="#fff" outlined> Get in Touch</v-btn>
           </v-col>
-          <v-col md="6" xs="12" sm="12">
+          <v-col class="my-auto" md="6" xs="12" sm="12">
                    <img class="avt" src="./assets/img/sally.png">
 
           </v-col>
@@ -311,21 +313,11 @@ export default {
   background: transparent;
 }
 .avt {
-  position: relative;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
   border: 2px solid #fff;
   border-radius: 50%;
-}
-
-.avt::after {
-  content: '';
-  width: 300px;
-  height: 300px;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  display: block;
-  margin: -4px 2px;
 }
 
 </style>
